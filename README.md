@@ -45,24 +45,24 @@
 
 ## Introduzione
 
-Performance is a huge subject, but it's not always a "back-end" or an "admin" subject: it's a Front-End responsibility too. The Front-End Performance Checklist is an exhaustive list of elements you should check or at least be aware of, as a Front-End developer and apply to your project (personal and professional).
+Il tematica delle performance è molto ampia, ma non è sempre un aspetto da considerare a livello "back-end" oppure "admin": infatti è anche una responsabilità a livello Front-end. La Checklist delle Performance Front-end rappresenta una lista esaustiva di elementi che dovresti seguire o per lo meno esserne consapevole, come sviluppatore Front-End e applicare ai tuoi progetti (personali e lavorativi).
 
-### How to use?
+### Come usarla?
 
-For each rule, you will have a paragraph explaining *why* this rule is important and *how* you can fix it. For more deep information, you should find links that will point to 🛠 tools, 📖 articles or 📹 medias that can complete the checklist.
+Per ogni regola, troverai un paragrafo che spiega *perchè* questa regola è importante e *come* puoi sistemarla. Per informazioni più approfondite, dovresti trovare link che puntano a 🛠 strumenti, 📖 articoli o 📹 contenuti multimediali che possono completare la checklist.
 
-All items in the **Front-End Performance Checklist** are essentials to achieve the highest performance score but you would find an indicator to help you to eventually prioritised some rules amount others. There are 3 levels of priority:
+Tutti gli elementi contenuti nella **Checklist delle Performance Front-End** sono essenziali per raggiungere livelli di performance più alti, ma troverai anche un indicatore che ti aiuterà a dare priorità ad alcune regole rispetto ad altre. Ci sono 3 livelli di priorità:
 
-* ![Low][low] means that the item has a **low** priority.
-* ![Medium][medium] means that the item has a **medium** priority. You shouldn't avoid tackling that item.
-* ![High][high] means that the item has a **high** priority. You can't avoid following that rule and implement the corrections recommended.
+* ![Low][low] livello di priorità **basso**.
+* ![Medium][medium] livello di priorità **medio**. Non dovresti evitare di affronare quell'elemento.
+* ![High][high] livello di priorità **alto**. Non puoi evitare di seguire quella regola e dovresti implementare le correzioni segnalate.
 
-### Performance tools
+### Strumenti di Performance
 
-List of the tools you can use to test or monitor your website or application:
+Lista degli strumenti che puoi utilizzare per testare o monitorare il tuo sito web o la tua applicazione:
 
  * 🛠 [WebPagetest - Website Performance and Optimization Test](https://www.webpagetest.org/)
- * 🛠 ☆ [Dareboost: Website Speed Test and Website Analysis](https://www.dareboost.com/) (use the coupon WPCDD20 for -20%)
+ * 🛠 ☆ [Dareboost: Website Speed Test and Website Analysis](https://www.dareboost.com/) (utilizza il coupon WPCDD20 per avere uno sconto del 20%)
  * 🛠 [Treo: Page Speed Monitoring](https://treo.sh/?ref=perfchecklist)
  * 🛠 [GTmetrix | Website Speed and Performance Optimization](https://gtmetrix.com/)
  * 🛠 [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)
@@ -86,7 +86,7 @@ List of the tools you can use to test or monitor your website or application:
  * 🛠 [Exthouse - Analyze the impact of a browser extension on web performance](https://github.com/treosh/exthouse)
  * 🛠 [LogRocket - Measure front-end performance in production apps](https://logrocket.com)
 
-### References
+### Riferimenti
 
  * 📹 [The Cost Of JavaScript - YouTube](https://www.youtube.com/watch?v=_bzqF05xsC4) ([text version](https://medium.com/@addyosmani/the-cost-of-javascript-in-2018-7d8950fbb5d4))
  * [AddyOsmani.com - Start Performance Budgeting](https://addyosmani.com/blog/performance-budgets/)
