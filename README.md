@@ -7,8 +7,8 @@
   <br>
 </h1>
 
-<h4 align="center">🎮 The only Front-End Performance Checklist that runs faster than the others.</h4>
-<p align="center">One simple rule: "Design and code with performance in mind"</p>
+<h4 align="center">🎮 L'unica Checklist delle Performance Front-End che funziona più velocemente delle altre.</h4>
+<p align="center">Una semplice regola: "Progetta e sviluppa con le performance in mente"</p>
 
 <p align="center">
   <a href="http://makeapullrequest.com">
@@ -23,7 +23,7 @@
 </p>
 
 <p align="center">
-  <a href="#how-to-use">How To Use</a> • <a href="#contributing">Contributing</a> • <a href="https://www.producthunt.com/posts/front-end-performance-checklist">Product Hunt</a>
+  <a href="#how-to-use">Come usarla</a> • <a href="#contributing">Contribuisci</a> • <a href="https://www.producthunt.com/posts/front-end-performance-checklist">Product Hunt</a>
 </p>
 
 <p align="center">
@@ -34,15 +34,16 @@
   <a href="https://github.com/lex111/Front-End-Performance-Checklist">🇷🇺</a>
   <a href="https://github.com/GameWith/Front-End-Performance-Checklist">🇯🇵</a>
   <a href="https://github.com/ms-fadaei/Front-End-Performance-Checklist">🇮🇷</a>
+    <a href="https://github.com/marbio/Front-End-Performance-Checklist">🇮🇹</a>
 </p>
 
 <p align="center">
-    <span>Other Checklists:</span>
+    <span>Altre Checklists:</span>
     <br>
   🗂 <a href="https://github.com/thedaviddias/Front-End-Checklist#---------front-end-checklist-">Front-End Checklist</a> • 💎 <a href="https://github.com/thedaviddias/Front-End-Design-Checklist#front-end-design-checklist">Front-End Design Checklist</a>
 </p>
 
-## Introduction
+## Introduzione
 
 Performance is a huge subject, but it's not always a "back-end" or an "admin" subject: it's a Front-End responsibility too. The Front-End Performance Checklist is an exhaustive list of elements you should check or at least be aware of, as a Front-End developer and apply to your project (personal and professional).
 
