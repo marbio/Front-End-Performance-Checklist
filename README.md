@@ -89,7 +89,7 @@ Lista degli strumenti che puoi utilizzare per testare o monitorare il tuo sito w
 ### Riferimenti
 
  * 📹 [The Cost Of JavaScript - YouTube](https://www.youtube.com/watch?v=_bzqF05xsC4) ([text version](https://medium.com/@addyosmani/the-cost-of-javascript-in-2018-7d8950fbb5d4))
- * [AddyOsmani.com - Start Performance Budgeting](https://addyosmani.com/blog/performance-budgets/)
+ * 📖 [AddyOsmani.com - Start Performance Budgeting](https://addyosmani.com/blog/performance-budgets/)
  * 📖 [Get Started With Analyzing Runtime Performance  |  Google Developers](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/)
  * 📖 [State of the Web | 2018_01_01](https://httparchive.org/reports/state-of-the-web?start=2018_01_01)
  * 📖 [Page Weight Doesn't Matter](https://www.speedshop.co/2015/11/05/page-weight-doesnt-matter.html)
@@ -106,41 +106,41 @@ Lista degli strumenti che puoi utilizzare per testare o monitorare il tuo sito w
 
 ![html]
 
-- [ ] **Minified HTML:** ![medium] The HTML code is minified, comments, white spaces and new lines are removed from production files.
+- [ ] **HTML Minificato:** ![medium] Il codice HTML viene minimizzato, i commenti, gli spazi bianchi e le nuove righe vengono eliminati dai file di produzione.
 
-    *Why:*
-    > Removing all unnecessary spaces, comments and attributes will reduce the size of your HTML and speed up your site's page load times and obviously lighten the download for your user.
+    *Perchè:*
+    > La rimozione di tutti gli spazi, i commenti e gli attributi non necessari ridurra le dimensioni del tuo documento HTML e velocizzerà il tempo di caricamento del tuo sito web ed ovviamente ciò allegerirà il download per gli utenti finali.
 
-    *How:*
-    > Most of the frameworks have plugins to facilitate the minification of the webpages. You can use a bunch of NPM modules that can do the job for you automatically.
+    *Come:*
+    > La maggior parte dei framework dispone di plugin per facilitare la minificazione delle pagine web. Puoi utilizzare diversi moduli NPM che faranno automaticamente il lavoro al tuo posto.
 
     * 🛠 [HTML minifier | Minify Code](http://minifycode.com/html-minifier/)
     * 🛠 [Online HTML Compressor](http://refresh-sf.com)
     * 📖 [Experimenting with HTML minifier — Perfection Kills](http://perfectionkills.com/experimenting-with-html-minifier/#use_short_doctype)
    
-- [ ] **Place CSS tags always before JavaScript tags:** ![high] Ensure that your CSS is always loaded before having JavaScript code.
+- [ ] **Posiziona i tag CSS sempre prima di quelli Javascript:** ![high] Assicurati che il tuo CSS venga sempre caricato prima del codice Javascript.
 
     ```html
-    <!-- Not recommended -->
+    <!-- Non raccomandato -->
     <script src="jquery.js"></script>
     <script src="foo.js"></script>
     <link rel="stylesheet" href="foo.css"/>
 
-    <!-- Recommended -->
+    <!-- Raccomandato -->
     <link rel="stylesheet" href="foo.css"/>
     <script src="jquery.js"></script>
     <script src="foo.js"></script>
     ```
 
-    *Why:*
-    > Having your CSS tags before any JavaScript enables better, parallel download which speed up browser rendering time.
+    *Perchè?:*
+    > Avere i tag CSS prima di qualsiasi tag Javascript consente un download parallelo migliore e questo accellera i tempi di rendering del browser.
 
-    *How:*
-    > ⁃ Ensure that `<link>`  and `<style>` in your `<head>` are always before your `<script>`.
+    *Come?:*
+    > ⁃ Assicurati che `<link>`  e `<style>` nell' `<head>` vengono sempre prima di `<script>`.
 
     * 📖 [Ordering your styles and scripts for pagespeed](https://varvy.com/pagespeed/style-script-order.html)
 
-- [ ] **Minimize the number of iframes:** ![high] Use iframes only if you don't have any other technical possibility. Try to avoid iframes as much as you can.
+- [ ] **Minimizza il numero degli iframe:** ![high] Usa gli iframe solo se non hai altre possibilità tecniche. Use iframes only if you don't have any other technical possibility. Cerca di evitarli il più possibile.
 
 - [ ] **Pre-load optimization with prefetch, dns-prefetch and prerender:** ![low] Popular browsers can use directive on `<link>` tag and "rel" attribute with certain keywords to pre-load specific URLs.
 
