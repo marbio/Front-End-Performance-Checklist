@@ -154,44 +154,44 @@ Lista degli strumenti che puoi utilizzare per testare o monitorare il tuo sito w
     * 📖 [Prefetching, preloading, prebrowsing](https://css-tricks.com/prefetching-preloading-prebrowsing/)
     * 📖 [What is Preload, Prefetch, and Preconnect](https://www.keycdn.com/blog/resource-hints)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ torna sù](#table-of-contents)**
 
 ## CSS
 
 ![css]
 
-- [ ] **Minification:** ![high] All CSS files are minified, comments, white spaces and new lines are removed from production files.
+- [ ] **Minificazione:** ![high] Tutti i file CSS vengono minificati, i commenti, gli spazi bianchie le nuove linee vengono rimosse dai file di produzione.
 
-    *Why:*
-    > When CSS files are minified, the content is loaded faster and less data is sent to the client. It's important to always minify CSS files in production. It is beneficial for the user as it is for any business who wants to lower bandwidth costs and lower resource usage.
+    *Perchè?:*
+    > Quando i file CSS vengono minificati, il contenuto viene caricato più velocemente e vengono inviati meno dati al client. Minificare i file CSS in ambiente di produzione è molto importante. È vantaggioso sia per l'utente ma anche per ridurre i costi dovuti alla larghezza della banda e all'utilizzo delle risorse.
 
-    *How:*
-    > ⁃ Use tools to minify your files automatically before or during your build or your deployment.
+    *Come?:*
+    > ⁃ Utilizzare strumenti che permettono di minificare automaticamente i file CSS in fase di build oppure in fase di deploy.
 
-    * 🛠 [cssnano: A modular minifier based on the PostCSS ecosystem. - cssnano](https://cssnano.co/)
+    * 🛠 [cssnano: un minificatore modulare basato sull'ecosistema PostCSS.](https://cssnano.co/)
     * 🛠 [CSS Minfier](https://goonlinetools.com/css-minifier/)
     * 🛠 [@neutrinojs/style-minify - npm](https://www.npmjs.com/package/@neutrinojs/style-minify)
     * 🛠 [Online CSS Compressor](http://refresh-sf.com)
 
 
-- [ ] **Concatenation:** ![medium] CSS files are concatenated in a single file *(Not always valid for HTTP/2)*.
+- [ ] **Concatenazione:** ![medium] questa pratica consiste nell'unire diversi file CSS in un singolo file *(Non sempre valido se si utilizza il protocollo HTTP/2)*.
 
     ```html
 
-    <!-- Not recommended -->
+    <!-- Non raccomandato -->
     <link rel="stylesheet" href="foo.css"/>
     <link rel="stylesheet" href="bar.css"/>
 
-    <!-- Recommended -->
+    <!-- Raccomandato -->
     <link rel="stylesheet" href="foobar.css"/>
     ```
 
-    *Why:*
-    > If you are still using HTTP/1, you may need to still concatenate your files, it's less true if your server use HTTP/2 (tests should be made).
+    *Perchè?:*
+    > Se stai ancora utilizzando la versione HTTP/1, dovresti ancora continuare a concatenare i file CSS, mentre se usi HTTP/2 non dovresti aver più bisogno di unirli (per sicurezza conviene fare dei test).
 
-    *How:*
-    > ⁃ Use online tool or any plugin before or during your build or your deployment to concatenate your files. <br>
-    ⁃ Ensure, of course, that concatenation does not break your project.
+    *Come:*
+    > ⁃ Utilizza strumenti online o qualsiasi plugin prima o durante la build o il deploy dei tuoi file per effettuare la concatenzaione. <br>
+    ⁃ Assicurati, ovviamente, che la concatenazione non spacchi il front-end del tuo progetto.
 
     * 📖 [HTTP: Optimizing Application Delivery - High Performance Browser Networking (O'Reilly)](https://hpbn.co/optimizing-application-delivery/#optimizing-for-http2)
     * 📖 [Performance Best Practices in the HTTP/2 Era](https://deliciousbrains.com/performance-best-practices-http2/)
