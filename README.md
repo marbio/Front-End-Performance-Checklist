@@ -142,13 +142,13 @@ Lista degli strumenti che puoi utilizzare per testare o monitorare il tuo sito w
 
 - [ ] **Minimizza il numero degli iframe:** ![high] Usa gli iframe solo se non hai altre possibilità tecniche. Use iframes only if you don't have any other technical possibility. Cerca di evitarli il più possibile.
 
-- [ ] **Pre-load optimization with prefetch, dns-prefetch and prerender:** ![low] Popular browsers can use directive on `<link>` tag and "rel" attribute with certain keywords to pre-load specific URLs.
+- [ ] **Ottimizzazione del pre-load con prefetch, dns-prefetch e prerender:** ![low] I browser più popolari possono utilizzare direttive sui tag `<link>` e attributi  "rel" con alcune keyword particolari per pre-caricare URL specifici.
 
-    *Why:*
-    > Prefetching allows a browser to silently fetch the necessary resources needed to display content that a user might access in the near future. The browser is able to store these resources in its cache and speed up the way web pages load when they are using different domains for page resources. When a web page has finished loading and the idle time has passed, the browser begins downloading other resources. When a user go in a particular link (already prefetched), the content will be instantly served.
+    *Perchè?:*
+    > Il prefetching permette ai browser di prendere in maniera silenziosa le risorse necessarie per mostrare i contenuti che un utente potrebbe accedere nel futuro prossimo. I browser sono capaci di conservare queste risorse in cache e quindi velocizzare il caricamento delle pagine web quando utilizzano domini differenti per le risorse delle pagine. Quando una pagina web è stata caricata e il tempo di inattività è trascorso, il browser inizia a scaricare altre risorse. Quando un utente entra in un particolare link (già precaricato), il contenuto verrà servito istantaneamente.
 
-    *How:*
-    > ⁃ Ensure that `<link>` is in your `<head>` section.
+    *Come?:*
+    > ⁃ Assicurati che tutti i `<link>` siano nella sezione `<head>`.
 
     * 📖 [What Is Prefetching and Why Use It](https://www.keycdn.com/support/prefetching)
     * 📖 [Prefetching, preloading, prebrowsing](https://css-tricks.com/prefetching-preloading-prebrowsing/)
