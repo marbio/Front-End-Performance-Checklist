@@ -196,18 +196,18 @@ Lista degli strumenti che puoi utilizzare per testare o monitorare il tuo sito w
     * 📖 [HTTP: Optimizing Application Delivery - High Performance Browser Networking (O'Reilly)](https://hpbn.co/optimizing-application-delivery/#optimizing-for-http2)
     * 📖 [Performance Best Practices in the HTTP/2 Era](https://deliciousbrains.com/performance-best-practices-http2/)
 
-- [ ] **Non-blocking:** ![high] CSS files need to be non-blocking to prevent the DOM from taking time to load.
+- [ ] **Non bloccante:** ![high] I file CSS devono essere non bloccanti per evitare che il caricamento del DOM di pagina richieda più tempo.
 
     ```html
     <link rel="preload" href="global.min.css" as="style" onload="this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="global.min.css"></noscript>
     ```
 
-    *Why:*
-    > CSS files can block the page load and delay the rendering of your page. Using `preload` can actually load the CSS files before the browser starts showing the content of the page.
+    *Perchè?:*
+    > I file CSS possono bloccare il caricamento di pagina e ritardare il rendering. Utilizzando  `preload` si può caricare un file css prima che il browser inizi a mostrare il contenuto di una pagina.
 
-    *How:*
-    > ⁃ You need to add the `rel` attribute with the `preload` value and add `as="style"` on the `<link>` element.
+    *Come?:*
+    > ⁃ Bisogna aggiungere l'attributo  `rel` attribute con il valore `preload` e aggiungere `as="style"` sull'elemento `<link>`.
 
     * 🛠 [loadCSS by filament group](https://github.com/filamentgroup/loadCSS)
     * 📖 [Example of preload CSS using loadCSS](https://gist.github.com/thedaviddias/c24763b82b9991e53928e66a0bafc9bf)
