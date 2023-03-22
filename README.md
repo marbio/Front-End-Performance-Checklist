@@ -227,16 +227,16 @@ Lista degli strumenti che puoi utilizzare per testare o monitorare il tuo sito w
     * 🛠 [PurgeCSS](https://github.com/FullHuman/purgecss)
     * 🛠 [Chrome DevTools Coverage](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage)
 
-* [ ] **CSS Critical:** ![high] The CSS critical (or "above the fold") collects all the CSS used to render the visible portion of the page. It is embedded before your principal CSS call and between `<style></style>` in a single line (minified if possible).
+* [ ] **CSS critico:** ![high] Il CSS critico (o "above the fold") raggruppa tutto il CSS utilizzato per rendereizzare la porzione di pagina visibile. Questo viene incorporato prima di chiamare il CSS principale e all'interno dei tag `<style></style>` in una singola linea (possibilmente minificato).
 
-    *Why:*
-    > Inlining critical CSS help to speed up the rendering of the web pages reducing the number of requests to the server.
+    *Perchè?:*
+    > Mettere in linea il CSS critico aiuta a velocizzare la renderizzazione delle pagine web riducendo il numero delle richieste al server.
 
-    *How:*
-    > Generate the CSS critical with online tools or using a plugin like the one that Addy Osmani developed.
+    *Come:*
+    > Generare il CSS critico con strumenti online oppure utilizzando un plugin come quello sviluppato da Addy Osmani.
 
     * 📖 [Understanding Critical CSS](https://www.smashingmagazine.com/2015/08/understanding-critical-css/)
-    * 🛠 [Critical by Addy Osmani on GitHub](https://github.com/addyosmani/critical) automates this.
+    * 🛠 [Critical by Addy Osmani on GitHub](https://github.com/addyosmani/critical) automatizza questo.
     * 📖 [Inlining critical CSS for better web performance | Go Make Things](https://gomakethings.com/inlining-critical-css-for-better-web-performance/)
      * 🛠 [Critical Path CSS Generator - Prioritize above the fold content :: SiteLocity](https://www.sitelocity.com/critical-path-css-generator)
      * 📖 [Reduce the size of the above-the-fold content
