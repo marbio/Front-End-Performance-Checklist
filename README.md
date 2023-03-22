@@ -165,7 +165,7 @@ Lista degli strumenti che puoi utilizzare per testare o monitorare il tuo sito w
     *Perchè?:*
     > Quando i file CSS vengono minificati, il contenuto viene caricato più velocemente e vengono inviati meno dati al client. Minificare i file CSS in ambiente di produzione è molto importante. È vantaggioso sia per l'utente ma anche per ridurre i costi dovuti alla larghezza della banda e all'utilizzo delle risorse.
 
-    *Come?:*
+    *Come:*
     > ⁃ Utilizzare strumenti che permettono di minificare automaticamente i file CSS in fase di build oppure in fase di deploy.
 
     * 🛠 [cssnano: un minificatore modulare basato sull'ecosistema PostCSS.](https://cssnano.co/)
@@ -214,13 +214,13 @@ Lista degli strumenti che puoi utilizzare per testare o monitorare il tuo sito w
     * 📖 [Preloading content with rel="preload"](https://developer.mozilla.org/en-US/docs/Web/HTML/Preloading_content)
     * 📖 [Preload: What Is It Good For? — Smashing Magazine](https://www.smashingmagazine.com/2016/02/preload-what-is-it-good-for/)
 
-- [ ] **Unused CSS:** ![medium] Remove unused CSS selectors.
+- [ ] **CSS inutilizzato:** ![medium] Rimozione dei selettori css non utilizzati.
 
-    *Why:*
-    > Removing unused CSS selectors can reduce the size of your files and then speed up the load of your assets.
+    *Perchè?:*
+    > La rimozione dei selettori CSS non utilizzati può ridurre la dimensione dei file e quindi velocizzare il caricamento delle risorse.
 
-    *How:*
-    > ⁃ ⚠️ Always check if the framework CSS you want to use don't already has a reset / normalize code included. Sometimes you may not need everything that is inside your reset / normalize file.
+    *Come:*
+    > ⁃ ⚠️ Controlla sempre se il framework CSS che vuoi utilizzare non abbia già incluso codice per fare il reset o la normalizzazione CSS. Alcune volte può capiare che non ti serva tutto che è contenuto all'interno dei file di reset o normalizzazione.
 
     * 🛠 [UnCSS Online](https://uncss-online.com/)
     * 🛠 [PurifyCSS](https://github.com/purifycss/purifycss)
