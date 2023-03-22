@@ -242,30 +242,31 @@ Lista degli strumenti che puoi utilizzare per testare o monitorare il tuo sito w
      * 📖 [Reduce the size of the above-the-fold content
 ](https://developers.google.com/speed/docs/insights/PrioritizeVisibleContent)
 
-- [ ] **Embedded or inline CSS:** ![high] Avoid using embed or inline CSS inside your `<body>` *(Not valid for HTTP/2)*
+- [ ] **CSS incorporato o in linea:** ![high] Evita di utilizzare CSS incorporati o in linea all'interno del tag `<body>` *(Non valido se si utilizza HTTP/2)*
 
-    *Why:*
-    > One of the first reason it's because it's a good practice to **separate content from design**. It also helps you have a more maintainable code and keep your site accessible. But regarding performance, it's simply because it decreases the file-size of your HTML pages and the load time.
+    *Perchè?:*
+    > Una delle prime ragioni è perchè è buona pratica **separare il contenuto dal design**. Questo aiuta anche ad avere una codebase più mantenibile e rende il tuo sito web accessibile. Ma per quanto riguarda le performance dipende semplicemente dal fatto che riduce la dimensione delle pagine HTML e riduce i tempi di caricamento.
 
-    *How:*
-    > Always use external stylesheets or embed CSS in your `<head>` (and follow the others CSS performance rules)
+    *Come:*
+    > Utilizza sempre fogli di stile esterni oppure incorpora il CSS all'interno del tag `<head>` (e segui le altre regole di performance lato CSS).
 
     * 📖 [Observe CSS Best Practices: Avoid CSS Inline Styles](https://www.lifewire.com/avoid-inline-styles-for-css-3466846)
 
-- [ ] **Analyse stylesheets complexity:** ![high] Analyzing your stylesheets can help you to flag issues, redundancies and duplicate CSS selectors.
+- [ ] **Analizza la complessità dei file CSS:** ![high] 
+Analizzare i tuoi fogli di stile può aiutarti ad identificare problematiche, ridondanze e selettori CSS duplicati.
 
-    *Why:*
-    > Sometimes you may have redundancies or validation errors in your CSS, analysing your CSS files and removed these complexities can help you to speed up your CSS files (because your browser will read them faster)
-
-    *How:*
-    > Your CSS should be organized, using a CSS preprocessor can help you with that. Some online tools listed below can also help you analysing and correct your code.
+    *Perchè?:*
+    > Qualche volta potresti avere ridondanze o errori di validazione nei tuoi file CSS, analizzandoli e riducendo queste complessità può aiutarti a velocizzarli (perchè il tuo browser riuscirà a caricarli più velocemente).
+    
+    *Come:*
+    > Il tuo CSS dovrebbe essere organizzato, magari  utilizzando un preprocessore CSS. Alcuni degli strumenti online riportati sotto possono anche aiutarti ad analizzare e correggere il tuo codice.
 
     * 🛠 [TestMyCSS | Optimize and Check CSS Performance](http://www.testmycss.com/)
     * 🛠 [CSS Stats](https://cssstats.com/)
     * 🛠 [macbre/analyze-css: CSS selectors complexity and performance analyzer](https://github.com/macbre/analyze-css)
     * 🛠 [Project Wallace](https://www.projectwallace.com/) is like CSS Stats but stores stats over time so you can track your changes
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ torna su](#table-of-contents)**
 
 ## Fonts
 
