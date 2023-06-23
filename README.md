@@ -411,29 +411,29 @@ Analizzare i tuoi fogli di stile può aiutarti ad identificare problematiche, ri
 
 ![javascript]
 
-- [ ] **JS Minification:** ![high] All JavaScript files are minified, comments, white spaces and new lines are removed from production files *(still valid if using HTTP/2)*.
+- [ ] **Minificazione Javascript:** ![high] Tutti i file JavaScript sono minimizzati, i commenti, gli spazi bianchi e le nuove righe vengono rimossi dai file di produzione *(ancora valido se si utilizza HTTP/2)*.
 
-    *Why:*
-    > Removing all unnecessary spaces, comments and break will reduce the size of your JavaScript files and speed up your site's page load times and obviously lighten the download for your user.
+    *Perchè?:*
+    > La rimozione di tutti gli spazi, i commenti e le interruzioni non necessari ridurrà le dimensioni dei tuoi file JavaScript e accelererà i tempi di caricamento della pagina del tuo sito e ovviamente alleggerirà il download per il tuo utente.
 
-    *How:*
-    > ⁃ Use the tools suggested below to minify your files automatically before or during your build or your deployment.
+    *Come?:*
+    > ⁃ Usa gli strumenti suggeriti di seguito per minimizzare automaticamente i tuoi file prima o durante la compilazione o la distribuzione.
 
     * 🛠 [uglify-js - npm](https://www.npmjs.com/package/uglify-js)
     * 🛠 [Online JavaScript Compressor](http://refresh-sf.com)
-    * 📖 [Short read: How is HTTP/2 different? Should we still minify and concatenate?](https://scaleyourcode.com/blog/article/28)
+    * 📖 [Breve lettura: in che modo HTTP/2 è diverso? Dovremmo ancora minimizzare e concatenare?](https://scaleyourcode.com/blog/article/28)
 
-* [ ] **No JavaScript inside:** ![medium] *(Only valid for website)* Avoid having multiple JavaScript codes embedded in the middle of your body. Regroup your JavaScript code inside external files or eventually in the `<head>` or at the end of your page (before `</body>`).
+* [ ] **Nessun JavaScript nel mezzo della pagina:** ![medium] *(Valido solo per i siti Web)* Evita di avere più codici JavaScript incorporati nel mezzo del tuo corpo. Raggruppa il tuo codice JavaScript all'interno di file esterni o eventualmente in `<head>` o alla fine della tua pagina (prima di `</body>`).
 
-    *Why:*
-    > Placing JavaScript embedded code directly in your `<body>` can slow down your page because it loads while the DOM is being built. The best option is to use external files with `async` or `defer` to avoid blocking the DOM. Another option is to place some scripts inside your `<head>`. Most of the time analytics code or small script that need to load before the DOM gets to main processing.
+    *Perchè?:*
+    > L'inserimento di codice JavaScript incorporato direttamente nel tuo `<body>` può rallentare la tua pagina perché si carica mentre il DOM viene costruito. L'opzione migliore è utilizzare file esterni con `async` o `defer` per evitare di bloccare il DOM. Un'altra opzione è inserire alcuni script all'interno del tuo `<head>`. Il più delle volte codice di analisi o piccolo script che deve essere caricato prima che il DOM arrivi all'elaborazione principale.
 
-    *How:*
-    > Ensure that all your files are loaded using `async` or `defer` and decide wisely the code that you will need to inject in your `<head>`.
+    *Come?:*
+    > Assicurati che tutti i tuoi file siano caricati usando `async` o `defer` e decidi saggiamente il codice che dovrai inserire nel tuo `<head>`.
 
-     * 📖 [11 Tips to Optimize JavaScript and Improve Website Loading Speeds](https://www.upwork.com/hiring/development/11-tips-to-optimize-javascript-and-improve-website-loading-speeds/)
+     * 📖 [11 consigli per ottimizzare JavaScript e migliorare la velocità di caricamento del sito web](https://www.upwork.com/hiring/development/11-tips-to-optimize-javascript-and-improve-website-loading-speeds/)
 
-* [ ] **Non-blocking JavaScript:** ![high] JavaScript files are loaded asynchronously using `async` or deferred using `defer` attribute.
+* [ ] **Javascript non bloccante:** ![high] I file JavaScript vengono caricati in modo asincrono utilizzando "async" o differiti utilizzando l'attributo "defer".
 
     ```html
     <!-- Defer Attribute -->
@@ -443,63 +443,63 @@ Analizzare i tuoi fogli di stile può aiutarti ad identificare problematiche, ri
     <script async src="foo.js"></script>
     ```
 
-    *Why:*
-    > JavaScript blocks the normal parsing of the HTML document, so when the parser reaches a `<script>` tag (particularly is inside the `<head>`), it stops to fetch and run it. Adding `async` or `defer` are highly recommended if your scripts are placed in the top of your page but less valuable if just before your `</body>` tag. But it's a good practice to always use these attributes to avoid any performance issue.
+    *Perchè?:*
+    > JavaScript blocca la normale analisi del documento HTML, quindi quando il parser raggiunge un tag `<script>` (in particolare si trova all'interno di `<head>`), si ferma per recuperarlo ed eseguirlo. L'aggiunta di `async` o `defer` è altamente raccomandata se i tuoi script sono posizionati nella parte superiore della pagina, ma è meno utile se appena prima del tag `</body>`. Tuttavia, è consigliabile utilizzare sempre questi attributi per evitare qualsiasi problema di prestazioni.
 
-    *How:*
-    > ⁃ Add `async` (if the script don't rely on other scripts) or `defer` (if the script relies upon or relied upon by an async script) as an attribute to your script tag. <br>
-    ⁃ If you have small scripts, maybe use inline script place above async scripts.
+    *Come?:*
+    > ⁃ Aggiungi `async` (se lo script non si basa su altri script) o `defer` (se lo script si basa o si basa su uno script asincrono) come attributo al tag dello script. <br>
+    ⁃ Se disponi di script di piccole dimensioni, potresti utilizzare lo script inline posto sopra gli script asincroni.
 
-    * 📖 [Remove Render-Blocking JavaScript](https://developers.google.com/speed/docs/insights/BlockingJS)
-    * 📖 [Defer loading JavaScript](https://varvy.com/pagespeed/defer-loading-javascript.html)
+    * 📖 [Rimozione di Javascript Render-Blocking](https://developers.google.com/speed/docs/insights/BlockingJS)
+    * 📖 [Differisci il caricamento dei file javascript](https://varvy.com/pagespeed/defer-loading-javascript.html)
 
-* [ ] **Optimized and updated JS libraries:** ![medium] All JavaScript libraries used in your project are necessary (prefer Vanilla JavaScript for simple functionalities), updated to their latest version and don't overwhelm your JavaScript with unnecessary methods.
+* [ ] **Librerie JS ottimizzate e aggiornate:** ![medium] Tutte le librerie JavaScript utilizzate nel tuo progetto sono necessarie (preferisci Vanilla JavaScript per funzionalità semplici), aggiornate alla loro ultima versione e non sovraccaricano il tuo JavaScript con metodi non necessari.
 
-    *Why:*
-    > Most of the time, new versions come with optimization and security fix. You should use the most optimized code to speed up your project and ensure that you'll not slow down your website or app without outdated plugin.
+    *Perchè?:*
+    > La maggior parte delle volte, le nuove versioni vengono fornite con l'ottimizzazione e la correzione della sicurezza. Dovresti utilizzare il codice più ottimizzato per velocizzare il tuo progetto e assicurarti di non rallentare il tuo sito Web o la tua app senza un plug-in obsoleto.
 
-    *How:*
-    > If your project use NPM packages, [npm-check](https://www.npmjs.com/package/npm-check) is a pretty interesting library to upgrade / update your libraries.
-    > [Greenkeeper](https://greenkeeper.io/) can automatically look for your dependencies and suggest an update every time a new version is out.
+    *Come?:*
+    > Se il tuo progetto usa i pacchetti NPM, [npm-check](https://www.npmjs.com/package/npm-check) è una libreria piuttosto interessante per aggiornare / aggiornare le tue librerie.
+    > [Greenkeeper](https://greenkeeper.io/) può cercare automaticamente le tue dipendenze e suggerire un aggiornamento ogni volta che esce una nuova versione.
 
-    * 📖 [You may not need jQuery](http://youmightnotneedjquery.com/)
-    * 📖 [Vanilla JavaScript for building powerful web applications](https://plainjs.com/)
+    * 📖 [Potresti non aver bisogno di jQuery](http://youmightnotneedjquery.com/)
+    * 📖 [Vanilla JavaScript per la creazione di potenti applicazioni web](https://plainjs.com/)
 
-- [ ] **Check dependencies size limit:** ![low] Ensure to use wisely external libraries, most of the time, you can use a lighter library for a same functionality.
+- [ ] **Controlla il limite delle dimensioni delle dipendenze:** ![low] Assicurati di utilizzare saggiamente librerie esterne, la maggior parte delle volte puoi utilizzare una libreria più leggera per la stessa funzionalità.
 
-    *Why:*
+    *Perchè?:*
     > You may be tempted to use one of the 745 000 packages you can find on [npm](https://www.npmjs.com/), but you need to choose the best package for your needs. For example, MomentJS is an awesome library but with a lot of methods you may never use, that's why Day.js was created. It's just 2kB vs 16.4kB gz for Moment.
 
-    *How:*
-    > Always compare and choose the best and lighter library for your needs. You can also use tools like [npm trends](http://www.npmtrends.com/) to compare NPM package downloads counts or [Bundlephobia](https://bundlephobia.com/) to know the size of your dependencies.
+    *Come?:*
+    > Confronta e scegli sempre la libreria migliore e più leggera per le tue esigenze. Puoi anche usare strumenti come [npm trends](http://www.npmtrends.com/) per confrontare i conteggi dei download dei pacchetti NPM o [Bundlephobia](https://bundlephobia.com/) per conoscere la dimensione delle tue dipendenze.
 
-    * 🛠 [ai/size-limit: Prevent JS libraries bloat. If you accidentally add a massive dependency, Size Limit will throw an error.](https://github.com/ai/size-limit)
+    * 🛠 [ai/size-limit: Prevenire il gonfiamento delle librerie JS. Se aggiungi accidentalmente una dipendenza massiccia, Size Limit genererà un errore.](https://github.com/ai/size-limit)
     * 🛠 [webpack-bundle-analyzer - npm](https://www.npmjs.com/package/webpack-bundle-analyzer)
     * 🛠 [js-dependency-viewer - npm](https://www.npmjs.com/package/js-dependency-viewer)
-    * 📖 [Size Limit: Make the Web lighter — Martian Chronicles, Evil Martians’ team blog](https://evilmartians.com/chronicles/size-limit-make-the-web-lighter)
+    * 📖 [Size Limit: Rendi il web più leggero — Martian Chronicles, Evil Martians’ team blog](https://evilmartians.com/chronicles/size-limit-make-the-web-lighter)
 
-- [ ] **JavaScript Profiling:** ![medium] Check for performance problems in your JavaScript files (and CSS too).
+- [ ] **Profilazione Javascript:** ![medium] Verifica la presenza di problemi di prestazioni nei tuoi file JavaScript (e anche CSS).
 
-    *Why:*
-    > JavaScript complexity can slow down runtime performance. Identifying these possible issues are essential to offer the smoothest user experience.
+    *Perchè?:*
+    > La complessità di JavaScript può rallentare le prestazioni di runtime. L'identificazione di questi possibili problemi è essenziale per offrire un'esperienza utente ottimale.
 
-    *How:*
-    > Use the Timeline tool in the Chrome Developer Tool to evaluate scripts events and found the one that may take too much time.
+    *Come?:*
+    > Utilizza lo strumento Timeline in Chrome Developer Tool per valutare gli eventi degli script e trovare quello che potrebbe richiedere troppo tempo.
 
-     * 📖 [Speed Up JavaScript Execution  |  Tools for Web Developers  |  Google Developers](https://developers.google.com/web/tools/chrome-devtools/rendering-tools/js-execution)
-    * 📖 [JavaScript Profiling With The Chrome Developer Tools — Smashing Magazine](https://www.smashingmagazine.com/2012/06/javascript-profiling-chrome-developer-tools/)
-    * 📖 [How to Record Heap Snapshots  |  Tools for Web Developers  |  Google Developers](https://developers.google.com/web/tools/chrome-devtools/memory-problems/heap-snapshots)
-    * 📖 [Chapter 22 - Profiling the Frontend - Blackfire](https://blackfire.io/docs/book/22-frontend-profiling)
-    * 📖 [30 Tips To Improve Javascript Performance](http://www.monitis.com/blog/30-tips-to-improve-javascript-performance/)
+     * 📖 [Aumenta la velocità di esecuzione di Javascript  |  Tools for Web Developers  |  Google Developers](https://developers.google.com/web/tools/chrome-devtools/rendering-tools/js-execution)
+    * 📖 [Profilazione JavaScript con gli strumenti per sviluppatori di Chrome — Smashing Magazine](https://www.smashingmagazine.com/2012/06/javascript-profiling-chrome-developer-tools/)
+    * 📖 [Come registrare istantanee Heap |  Tools for Web Developers  |  Google Developers](https://developers.google.com/web/tools/chrome-devtools/memory-problems/heap-snapshots)
+    * 📖 [Capitolo 22 - Profilare il Frontend - Blackfire](https://blackfire.io/docs/book/22-frontend-profiling)
+    * 📖 [30 suggerimenti per migliorare le prestazioni di Javascript](http://www.monitis.com/blog/30-tips-to-improve-javascript-performance/)
 
-- [ ] **Use of Service Workers:** ![medium] You are using Service Workers in your PWA to cache data or execute possible heavy tasks without impacting the user experience of your application.
+- [ ] **Utilizzo dei Service Worker:** ![medium] Stai utilizzando Service Worker nella tua PWA per memorizzare nella cache i dati o eseguire possibili attività pesanti senza influire sull'esperienza utente della tua applicazione.
    
-    * 📖 [Service Workers: an Introduction  |  Web Fundamentals  |  Google Developers](https://developers.google.com/web/fundamentals/primers/service-workers/)
-    * 📖 [Measuring the Real-world Performance Impact of Service Workers  |  Web  |  Google Developers](https://developers.google.com/web/showcase/2016/service-worker-perf)
-    * 📖 [What Are Service Workers and How They Help Improve Performance](https://www.keycdn.com/blog/service-workers/)
-    * 📹 [How does a service worker work? - YouTube](https://www.youtube.com/watch?v=__xAtWgfzvc)
+    * 📖 [Service Workers: Introduzione |  Web Fundamentals  |  Google Developers](https://developers.google.com/web/fundamentals/primers/service-workers/)
+    * 📖 [Misurazione dell'impatto sulle prestazioni nel mondo reale dei Service Worker  |  Web  |  Google Developers](https://developers.google.com/web/showcase/2016/service-worker-perf)
+    * 📖 [Cosa sono i Service Workers e come ci possono aiutare a migliorare le performance](https://www.keycdn.com/blog/service-workers/)
+    * 📹 [Come lavora un Service Worker? - YouTube](https://www.youtube.com/watch?v=__xAtWgfzvc)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ torna sù](#table-of-contents)**
 
 ## Server
 
