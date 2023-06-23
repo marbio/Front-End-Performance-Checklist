@@ -505,125 +505,124 @@ Analizzare i tuoi fogli di stile può aiutarti ad identificare problematiche, ri
 
 ![server-side]
 
-- [ ] **Your website is using HTTPS:** ![high]
+- [ ] **Il tuo sito utilizza HTTPS:** ![high]
 
-    *Why:*
-    > HTTPS is not only for ecommerce websites, but for all websites that are exchanging data. Data shared by a user or data shared to an external entity. Modern browsers today limit functionalities for sites that are not secure. For example: geolocation, push notifications and service workers don't work if your instance is not using HTTPS. And today is much more easy to setup a project with an SSL certificate than it was before (and for free, thanks to [Let's Encrypt](https://letsencrypt.org/)).
+    *Perchè?:*
+    > HTTPS non è solo per i siti Web di e-commerce, ma per tutti i siti Web che scambiano dati. Dati condivisi da un utente o dati condivisi con un'entità esterna. I browser moderni oggi limitano le funzionalità per i siti che non sono sicuri. Ad esempio: la geolocalizzazione, le notifiche push e i service worker non funzionano se l'istanza non utilizza HTTPS. E oggi è molto più facile configurare un progetto con un certificato SSL rispetto a prima (e gratuitamente, grazie a[Let's Encrypt](https://letsencrypt.org/)).
 
- * 📖 [Why Use HTTPS? | Cloudflare](https://www.cloudflare.com/learning/security/why-use-https/)
- * 📖 [Enabling HTTPS Without Sacrificing Your Web Performance - Moz](https://moz.com/blog/enabling-https-without-sacrificing-web-performance)
- * 📖 [How HTTPS Affects Website Performance](https://wp-rocket.me/blog/https-affects-website-performance/)
- * 📖 [HTTP versus HTTPS versus HTTP2 - The real story | Tune The Web](https://www.tunetheweb.com/blog/http-versus-https-versus-http2/)
- * 📖 [HTTP vs HTTPS — Test them both yourself](https://www.httpvshttps.com/)
+ * 📖 [Perchè usare HTTPS? | Cloudflare](https://www.cloudflare.com/learning/security/why-use-https/)
+ * 📖 [Abilita HTTPS senza sacrificare le performance - Moz](https://moz.com/blog/enabling-https-without-sacrificing-web-performance)
+ * 📖 [Come HTTPS influisce sulle performance dei siti web](https://wp-rocket.me/blog/https-affects-website-performance/)
+ * 📖 [HTTP vs HTTPS vs HTTP2 - La vera storia | Tune The Web](https://www.tunetheweb.com/blog/http-versus-https-versus-http2/)
+ * 📖 [HTTP vs HTTPS — Testali da solo](https://www.httpvshttps.com/)
 
-- [ ] **Page weight < 1500 KB (ideally < 500 KB):** ![high] Reduce the size of your page + resources as much as you can.
+- [ ] **Il peso della pagina inferiore a < 1500 KB (idealmente < 500 KB):** ![high] Riduci la dimensione delle pagine e risorse più che puoi.
 
-    *Why:*
-    > Ideally you should try to target < 500 KB but the state of web shows that the median of Kilobytes is around 1500 KB (even on mobile). Depending on your target users, network connection, devices, it's important to reduce as much as possible your total Kilobytes to have the best user experience possible.
+    *Perchè?:*
+    > Idealmente dovresti provare a scegliere come target <500 KB, ma lo stato del Web mostra che la mediana di kilobyte è di circa 1500 KB (anche su dispositivi mobili). A seconda degli utenti target, della connessione di rete, dei dispositivi, è importante ridurre il più possibile i kilobyte totali per avere la migliore esperienza utente possibile.
 
-    *How:*
-    > ⁃ All the rules inside the Front-End Performance Checklist will help you to reduce as much as possible your resources and your code.
+    *Come?:*
+    > ⁃ Tutte le regole all'interno della Front-End Performance Checklist ti aiuteranno a ridurre il più possibile le tue risorse e il tuo codice.
 
-    * 📖 [Page Weight](https://httparchive.org/reports/page-weight#bytesTotal)
-    * 🛠 [What Does My Site Cost?](https://whatdoesmysitecost.com/)
-    * 🛠 [web - Measure full page size in Chrome DevTools - Stack Overflow](https://stackoverflow.com/questions/38239980/measure-full-page-size-in-chrome-devtools)
+    * 📖 [Peso delle pagine](https://httparchive.org/reports/page-weight#bytesTotal)
+    * 🛠 [Quanto costa il mio sito web?](https://whatdoesmysitecost.com/)
+    * 🛠 [web - Misura le dimensioni della pagina intera in Chrome DevTools - Stack Overflow](https://stackoverflow.com/questions/38239980/measure-full-page-size-in-chrome-devtools)
 
-- [ ] **Page load times < 3 seconds:** ![high] Reduce as much as possible your page load times to quickly deliver your content to your users.
+- [ ] **Tempi di caricamento pagina inferiori a 3 secondi:** ![high] Riduci il più possibile i tempi di caricamento della tua pagina per consegnare rapidamente i tuoi contenuti ai tuoi utenti.
 
-    *Why:*
-    > Faster your website or app is, less you have probability of bounce increases, in other terms you have less chances to lose your user or future client. Enough researches on the subject prove that point.
+    *Perchè?:*
+    > Più veloce è il tuo sito web o la tua app, meno hai probabilità di aumenti di rimbalzo, in altri termini hai meno possibilità di perdere il tuo utente o futuro cliente. Abbastanza ricerche sull'argomento dimostrano questo punto.
 
-    *How:*
-    > Use online tools like [Page Speed Insight](https://developers.google.com/speed/pagespeed/insights/) or [WebPageTest](https://www.webpagetest.org/) to analyze what could be slowing you down and use the Front-End Performance Checklist to improve your load times.
+    *Come?:*
+    > Utilizza strumenti online come [Page Speed Insight](https://developers.google.com/speed/pagespeed/insights/) oppure [WebPageTest](https://www.webpagetest.org/) per analizzare cosa potrebbe rallentarti e utilizzare l'elenco di controllo delle prestazioni del front-end per migliorare i tempi di caricamento.
 
-    * 🛠 [Compare your mobile site speed](https://www.thinkwithgoogle.com/feature/mobile/)
-    * 🛠 [Test Your Mobile Website Speed and Performance - Think With Google](https://testmysite.thinkwithgoogle.com/intl/en-us)
-    * 📖 [Average Page Load Times for 2018 - How does yours compare? - MachMetrics Speed Blog](https://www.machmetrics.com/speed-blog/average-page-load-times-websites-2018/)
+    * 🛠 [Confronta la velocità del tuo sito mobile](https://www.thinkwithgoogle.com/feature/mobile/)
+    * 🛠 [Metti alla prova la velocità e le prestazioni del tuo sito web mobile - Think With Google](https://testmysite.thinkwithgoogle.com/intl/en-us)
+    * 📖 [Tempi medi di caricamento della pagina per il 2018 - Come si confronta il tuo? - MachMetrics Speed Blog](https://www.machmetrics.com/speed-blog/average-page-load-times-websites-2018/)
 
-- [ ] **Time To First Byte < 1.3 seconds:** ![high] Reduce as much as you can the time your browser waits before receiving data.
+- [ ] **Time To First Byte inferiore a 1.3 secondi:** ![high] Riduci il più possibile il tempo di attesa del tuo browser prima di ricevere i dati.
 
-    * 📖 [What is Waiting (TTFB) in DevTools, and what to do about it](https://scaleyourcode.com/blog/article/27)
-    * 📖 [Monitoring your servers with free tools is easy](https://scaleyourcode.com/blog/article/7)
+    * 📖 [Che cosa il Waiting (TTFB) in DevTools e cosa fare al riguardo](https://scaleyourcode.com/blog/article/27)
+    * 📖 [Monitorare i tuoi server con strumenti gratuiti è facile](https://scaleyourcode.com/blog/article/7)
     * 📖 [Time to First Byte (TTFB)](https://varvy.com/pagespeed/ttfb.html)
-    * 🛠 [Global latency testing tool](https://latency.apex.sh)
+    * 🛠 [Strumento di test di latenza globale](https://latency.apex.sh)
 
-* [ ] **Cookie size:** ![medium] If you are using cookies, be sure each cookie doesn't exceed 4096 bytes and your domain name doesn't have more than 20 cookies.
+* [ ] **Dimensione dei cookie:** ![medium] Se stai utilizzando i cookie, assicurati che ognuno dei cookie non superi i 4096 bytes ed il tuo nome dominio non abbia più di 20 cookies.
 
-    *Why:*
-    > Cookies are exchanged in the HTTP headers between web servers and browsers. It's important to keep the size of cookies as low as possible to minimize the impact on the user's response time.
+    *Perchè?:*
+    > I cookie vengono scambiati nelle intestazioni HTTP tra server Web e browser. È importante mantenere la dimensione dei cookie il più bassa possibile per ridurre al minimo l'impatto sul tempo di risposta dell'utente.
 
-    *How:*
-    > Eliminate unnecessary cookies.
+    *Come?:*
+    > Elimina i cookie non necessari.
 
-    * 📖 [Cookie specification: RFC 6265](https://tools.ietf.org/html/rfc6265)
+    * 📖 [Specifiche Cookie: RFC 6265](https://tools.ietf.org/html/rfc6265)
     * 📖 [Cookies](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies)
-    * 🛠 [Browser Cookie Limits](http://browsercookielimits.squawky.net/)
-    * 📖 [Website Performance: Cookies Don't Taste So Good - Monitis Blog](http://www.monitis.com/blog/website-performance-cookies-dont-taste-so-good/)
-    * 📖 [Google's Web Performance Best Practices #3: Minimize Request Overhead - GlobalDots Blog](https://www.globaldots.com/googles-web-performance-best-practices-3-minimize-request-overhead/)
+    * 🛠 [Limiti dei Cookie Browser](http://browsercookielimits.squawky.net/)
+    * 📖 [Prestazioni del sito Web: i cookie non hanno un sapore così buono - Monitis Blog](http://www.monitis.com/blog/website-performance-cookies-dont-taste-so-good/)
+    * 📖 [Best practice #3 per le prestazioni Web di Google: ridurre al minimo il sovraccarico delle richieste - GlobalDots Blog](https://www.globaldots.com/googles-web-performance-best-practices-3-minimize-request-overhead/)
 
-- [ ] **Minimizing HTTP requests:** ![high] Always ensure that every file requested are essential for your website or application.
- * 📖 [Combine external CSS](https://varvy.com/pagespeed/combine-external-css.html)
- * 📖 [Combine external JavaScript](https://varvy.com/pagespeed/combine-external-javascript.html)
+- [ ] **Minimizzare le richieste HTTP:** ![high] Assicurati sempre che ogni file richiesto sia essenziale per il tuo sito web o applicazione.
+ * 📖 [Combinare Css esterni](https://varvy.com/pagespeed/combine-external-css.html)
+ * 📖 [Combinare javascript esterni](https://varvy.com/pagespeed/combine-external-javascript.html)
 
-- [ ] **Use a CDN to deliver your assets:** ![medium] Use a CDN to deliver faster your content over the world.
+- [ ] **Usa una CDN per servire le tue risorse:** ![medium] Usa un CDN per distribuire più velocemente i tuoi contenuti in tutto il mondo.
 
- * 📖 [10 Tips to Optimize CDN Performance - CDN Planet](https://www.cdnplanet.com/blog/10-tips-optimize-cdn-performance/)
+ * 📖 [10 Consigli per ottimizzare le performance CDN - CDN Planet](https://www.cdnplanet.com/blog/10-tips-optimize-cdn-performance/)
  * 📖 [HTTP Caching  |  Web Fundamentals  |  Google Developers](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/http-caching)
 
-- [ ] **Serve files from the same protocol:** ![high] Avoid having your website serving files coming from source using HTTP on your website which is using HTTPS for example. If your website is using HTTPS, external files should come from the same protocol.
+- [ ] **Servire i file con lo stesso protocollo:** ![high] Evita che il tuo sito Web serva file provenienti dalla fonte utilizzando HTTP sul tuo sito Web che utilizza HTTPS, ad esempio. Se il tuo sito Web utilizza HTTPS, i file esterni dovrebbero provenire dallo stesso protocollo.
 
-- [ ] **Serve reachable files:** ![high] Avoid requesting unreachable files (404).
- * 📖 [How to avoid bad requests](https://varvy.com/pagespeed/avoid-bad-requests.html)
+- [ ] **Servire file raggiunbili:** ![high] Evita di richiedere file non raggiungibili (404).
+ * 📖 [Come evitare richieste errate](https://varvy.com/pagespeed/avoid-bad-requests.html)
 
-- [ ] **Set HTTP cache headers properly:** ![high] Set HTTP headers to avoid expensive number of roundtrips between your browser and the server.
- * 📖 [Using cache-control for browser caching](https://varvy.com/pagespeed/cache-control.html)
+- [ ] **Imposta correttamente le intestazioni della cache HTTP:** ![high] Imposta le intestazioni HTTP per evitare un numero costoso di roundtrip tra il tuo browser e il server.
+ * 📖 [Utilizzo del controllo della cache per la memorizzazione nella cache del browser](https://varvy.com/pagespeed/cache-control.html)
 
-- [ ] **GZIP / Brotli compression is enabled:** ![high] Use a compression method such as Gzip or Brotli to reduce the size of your JavaScript files. With a smaller sizes file, users will be able to download the asset faster, resulting in improved performance.
+- [ ] **Compressione GZIP / Brotli abilitata:** ![high] Usa un metodo di compressione come Gzip o Brotli per ridurre le dimensioni dei tuoi file JavaScript. Con un file di dimensioni inferiori, gli utenti saranno in grado di scaricare l'asset più velocemente, con conseguente miglioramento delle prestazioni.
 
- * 🛠 [Check GZIP compression](https://checkgzipcompression.com/)
- * 🛠 [Check Brotli Compression](https://tools.keycdn.com/brotli-test)
+ * 🛠 [Controlla la compressione GZIP](https://checkgzipcompression.com/)
+ * 🛠 [Controlla la compressione Brotli](https://tools.keycdn.com/brotli-test)
  * 📖 [Can I use... Brotli](https://caniuse.com/#feat=brotli)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ torna sù](#table-of-contents)**
 
 ---
-## Performances and JS Frameworks
+## Performances Freamework Javascript
 
 ### Angular
  * 📖 [Angular Performance Checklist](https://github.com/mgechev/angular-performance-checklist)
 
 ### React
 
- * 📖 [Optimizing Performance - React](https://reactjs.org/docs/optimizing-performance.html)
- * 📖 [React image manipulation | Cloudinary](https://cloudinary.com/documentation/react_image_manipulation)
- * 📖 [Debugging React performance with React 16 and Chrome Devtools.](https://building.calibreapp.com/debugging-react-performance-with-react-16-and-chrome-devtools-c90698a522ad)
-  * 📖 [Build Performant - React](https://web.dev/react/)
+ * 📖 [Ottimizzazione performance - React](https://reactjs.org/docs/optimizing-performance.html)
+ * 📖 [Manipolazione immagini con React | Cloudinary](https://cloudinary.com/documentation/react_image_manipulation)
+ * 📖 [Debug delle prestazioni di React con React 16 e Chrome Devtools.](https://building.calibreapp.com/debugging-react-performance-with-react-16-and-chrome-devtools-c90698a522ad)
+  * 📖 [Costrusci in maniera performante- React](https://web.dev/react/)
 
 ### Vue
- * 📖 [Vue - Useful Links|Style Guide and Performance](https://learn-vuejs.github.io/vue-patterns/useful-links/)
+ * 📖 [Vue - Link utili|Style Guide and Performance](https://learn-vuejs.github.io/vue-patterns/useful-links/)
 
-## Performances and CMS
+## Performance e CMS
 
 ### WordPress
 
-* 🛠 [Test Your Website Speed | WordPress Hosting by @WPEngine](https://wpengine.com/speed-tool/)
+* 🛠 [Testa la velocità del tuo sito web | WordPress Hosting by @WPEngine](https://wpengine.com/speed-tool/)
 
-#### Articles
+#### Articoli
+ * 📖 [19 consigli per velocizzare le prestazioni di WordPress (Aggiornato)](https://www.wpbeginner.com/wordpress-performance-speed/)
+ * 📖 [Velocizza il tuo WordPress - Come salvare le immagini ottimizzate per il Web](https://www.wpbeginner.com/beginners-guide/speed-wordpress-save-images-optimized-web/)
 
- * 📖 [19 Tips to Speed Up WordPress Performance (Updated)](https://www.wpbeginner.com/wordpress-performance-speed/)
- * 📖 [Speed Up Your WordPress - How to Save Images Optimized for Web](https://www.wpbeginner.com/beginners-guide/speed-wordpress-save-images-optimized-web/)
+#### Plugin consigliati
 
-#### Plugins recommended
-
-* 🛠 [Caching Plugin for WordPress - Speed up your website with WP Rocket](https://wp-rocket.me/)
+* 🛠 [Plugin di memorizzazione nella cache per WordPress: velocizza il tuo sito Web con WP Rocket](https://wp-rocket.me/)
 * 🛠 [WP-Sweep | WordPress.org](https://wordpress.org/plugins/wp-sweep/)
-* 🛠 [Imagify Image Optimizer | WordPress.org](https://wordpress.org/plugins/imagify/)
+* 🛠 [Imagify Ottimizzatore di immagini | WordPress.org](https://wordpress.org/plugins/imagify/)
 
 ---
 
-## Translations
+## Traduzioni
 
-The Front-End Performance Checklist wants to also be available in other languages! Don't hesitate to submit your contribution!
+La Front-End Performance Checklist vuole essere disponibile anche in altre lingue! Non esitare a inviare il tuo contributo!
 
 * 🇵🇹 Portuguese: [fernandofawkes/Front-End-Performance-Checklist](https://github.com/fernandofawkes/Front-End-Performance-Checklist)
 * 🇨🇳 Chinese: [JohnsenZhou/Front-End-Performance-Checklist](https://github.com/JohnsenZhou/Front-End-Performance-Checklist)
@@ -635,41 +634,43 @@ The Front-End Performance Checklist wants to also be available in other language
 * 🇯🇵 Japanese: [GameWith/Front-End-Performance-Checklist](https://github.com/GameWith/Front-End-Performance-Checklist)
 * 🇵🇱 Polish: [mbiesiad/Front-End-Performance-Checklist](https://github.com/mbiesiad/Front-End-Performance-Checklist)
 * 🇮🇷 Persian: [ms-fadaei/Front-End-Performance-Checklist](https://github.com/ms-fadaei/Front-End-Performance-Checklist)
+* 🇮🇹 Italian: [marbio/Front-End-Performance-Checklist]
+(https://github.com/marbio/Front-End-Performance-Checklist)
 
-## Contributing
+## Contribuire
 
-**Open an issue or a pull request to suggest changes or additions.**
+**Apri una issue o una pull request per suggerire modifiche o aggiunte.**
 
-## Support
+## Supporto
 
-If you have any question or suggestion, don't hesitate to use Discord or Twitter:
+Se hai domande o suggerimenti, non esitare a usare Discord o Twitter:
 
 * [Chat on Discord](https://discord.gg/btHQRkm)
 * [Facebook](https://www.facebook.com/frontendchecklist/)
 * [Twitter](https://twitter.com/thedaviddias)
 
-## Author
+## Autore
 
-**Build with ❤️ by [David Dias](https://github.com/thedaviddias)
+**Costruita con ❤️ da [David Dias](https://github.com/thedaviddias)
 
-## Contributors
+## Contributori
 
-This project exists thanks to all the people who contribute. [[Contribute]](.github/CONTRIBUTING.md).
+Questo progetto esiste grazie a tutte le persone che contribuiscono. [[Contribute]](.github/CONTRIBUTING.md).
 <a href="https://github.com/thedaviddias/Front-End-Performance-Checklist/graphs/contributors">
     <img src="https://opencollective.com/front-end-checklist/contributors.svg?width=890" />
 </a>
 
 
-## Backers
+## Sostenitori
 
-Thank you to all our backers! 🙏 [[Become a backer](https://opencollective.com/front-end-checklist#backer)]
+Grazie a tutti i nostri sostenitori! 🙏 [[Diventa un sostenitore](https://opencollective.com/front-end-checklist#backer)]
 
 <a href="https://opencollective.com/front-end-checklist#backers" target="_blank"><img src="https://opencollective.com/front-end-checklist/backers.svg?width=890"></a>
 
 
-## Sponsors
+## Sponsor
 
-Support this project by becoming a sponsor. Your logo will show up here with a link to your website. [[Become a sponsor](https://opencollective.com/front-end-checklist#sponsor)]
+Sostieni questo progetto diventando uno sponsor. Il tuo logo apparirà qui con un link al tuo sito web. [[Diventa sponsor](https://opencollective.com/front-end-checklist#sponsor)]
 
 <a href="https://opencollective.com/front-end-checklist/sponsor/0/website" target="_blank"><img src="https://opencollective.com/front-end-checklist/sponsor/0/avatar.svg"></a>
 <a href="https://opencollective.com/front-end-checklist/sponsor/1/website" target="_blank"><img src="https://opencollective.com/front-end-checklist/sponsor/1/avatar.svg"></a>
@@ -682,13 +683,13 @@ Support this project by becoming a sponsor. Your logo will show up here with a l
 <a href="https://opencollective.com/front-end-checklist/sponsor/8/website" target="_blank"><img src="https://opencollective.com/front-end-checklist/sponsor/8/avatar.svg"></a>
 <a href="https://opencollective.com/front-end-checklist/sponsor/9/website" target="_blank"><img src="https://opencollective.com/front-end-checklist/sponsor/9/avatar.svg"></a>
 
-## License
+## Licenza
 
-[MIT](LICENSE)
+[MIT](LICENZA)
 
-All icons are provided by [Icons8](https://icons8.com/)
+Tutte le icone sono fornite da [Icons8](https://icons8.com/)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ Torna sù](#table-of-contents)**
 
 [logo]: images/logo-front-end-performance-checklist.jpg
 [html]: images/html.png
